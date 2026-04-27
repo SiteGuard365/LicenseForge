@@ -1,0 +1,121 @@
+/* LicenseForge admin styles */
+.lf-wrap{margin:10px 0 30px;max-width:1400px}
+.lf-page-header{display:flex;align-items:center;gap:10px;margin:0 0 18px;flex-wrap:wrap}
+.lf-page-header h1{margin:0;padding:9px 0 4px;font-size:23px;font-weight:400;line-height:1.3}
+.lf-page-header .lf-subtitle{color:#646970;font-size:13px}
+.lf-page-header .lf-spacer{flex:1}
+
+.lf-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.lf-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.lf-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.lf-cols-2-1{display:grid;grid-template-columns:2fr 1fr;gap:16px;align-items:start}
+@media(max-width:900px){.lf-grid-2,.lf-grid-3,.lf-grid-4,.lf-cols-2-1{grid-template-columns:1fr}}
+
+/* Cards (postbox-like) */
+.lf-card{background:#fff;border:1px solid #c3c4c7;border-radius:4px;margin-bottom:16px;box-shadow:0 1px 1px rgba(0,0,0,.04)}
+.lf-card-header{padding:10px 14px;border-bottom:1px solid #dcdcde;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.lf-card-title{margin:0;font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px}
+.lf-card-body{padding:14px}
+.lf-card-body.no-pad{padding:0}
+
+/* Stats */
+.lf-stat{background:#fff;border:1px solid #c3c4c7;border-radius:4px;padding:14px 16px;box-shadow:0 1px 1px rgba(0,0,0,.04)}
+.lf-stat-icon{width:34px;height:34px;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:8px;font-size:16px}
+.lf-stat-icon.bg-blue{background:#2271b1}
+.lf-stat-icon.bg-green{background:#00a32a}
+.lf-stat-icon.bg-warning{background:#dba617}
+.lf-stat-icon.bg-error{background:#d63638}
+.lf-stat-icon.bg-wa{background:#25d366}
+.lf-stat-label{font-size:12px;color:#50575e;font-weight:500;margin-bottom:3px}
+.lf-stat-value{font-size:24px;font-weight:600;line-height:1.2}
+.lf-stat-sub{font-size:12px;color:#646970;margin-top:3px}
+.lf-stat-sub.up{color:#00a32a}
+.lf-stat-sub.down{color:#d63638}
+
+/* Badges */
+.lf-badge{display:inline-block;padding:2px 8px;border-radius:3px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.02em;line-height:1.5}
+.lf-badge-success{background:#edfaef;color:#00a32a;border:1px solid #00a32a}
+.lf-badge-warning{background:#fcf9e8;color:#996800;border:1px solid #dba617}
+.lf-badge-error{background:#fcf0f1;color:#d63638;border:1px solid #d63638}
+.lf-badge-info{background:#f0f6fc;color:#2271b1;border:1px solid #72aee6}
+.lf-badge-gray{background:#f0f0f1;color:#50575e;border:1px solid #c3c4c7}
+
+/* License key pill */
+.lf-key{font-family:Consolas,Monaco,monospace;font-size:12px;background:#f0f0f1;color:#1d2327;border:1px solid #dcdcde;padding:3px 8px;border-radius:3px;display:inline-flex;align-items:center;gap:6px;font-weight:500}
+.lf-copy{cursor:pointer;opacity:.5;font-size:13px;user-select:none}
+.lf-copy:hover{opacity:1;color:#2271b1}
+
+/* Toggle */
+.lf-toggle{position:relative;display:inline-block;width:36px;height:20px;vertical-align:middle}
+.lf-toggle input{opacity:0;width:0;height:0}
+.lf-toggle-sl{position:absolute;inset:0;background:#c3c4c7;border-radius:10px;cursor:pointer;transition:.2s}
+.lf-toggle-sl:before{content:'';position:absolute;width:14px;height:14px;border-radius:50%;background:#fff;top:3px;left:3px;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.lf-toggle input:checked+.lf-toggle-sl{background:#2271b1}
+.lf-toggle input:checked+.lf-toggle-sl:before{transform:translateX(16px)}
+
+/* Stock bar */
+.lf-stock-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #dcdcde}
+.lf-stock-row:last-child{border-bottom:none}
+.lf-stock-row .name{width:160px;font-weight:500;flex-shrink:0}
+.lf-stock-row .num{width:80px;text-align:right;font-weight:600;flex-shrink:0;font-size:12px}
+.lf-pbar{flex:1;height:8px;background:#f0f0f1;border-radius:4px;overflow:hidden;border:1px solid #dcdcde}
+.lf-pbar-fill{height:100%;border-radius:3px;transition:width .4s}
+
+/* Drop area */
+.lf-drop{border:2px dashed #c3c4c7;border-radius:4px;padding:30px;text-align:center;color:#646970;background:#f6f7f7;transition:all .14s}
+.lf-drop:hover{border-color:#2271b1;background:#f0f6fc}
+.lf-drop input[type=file]{margin-top:10px}
+
+/* Coming-soon banner */
+.lf-coming-soon{background:linear-gradient(135deg,#f0f6fc,#e7f0fa);border:1.5px solid #2271b1;border-radius:6px;padding:40px 30px;text-align:center;margin:30px 0}
+.lf-coming-soon h2{font-size:24px;margin:0 0 10px}
+.lf-coming-soon p{font-size:14px;color:#50575e;margin-bottom:18px}
+.lf-coming-soon .lf-roadmap-list{display:inline-block;text-align:left;margin-top:16px;list-style:disc;padding-left:24px;color:#50575e;font-size:13px;line-height:1.8}
+
+/* Module disabled prompt */
+.lf-module-off{background:#fcf9e8;border-left:4px solid #dba617;padding:14px 18px;border-radius:3px;margin-bottom:16px}
+.lf-module-off h3{margin:0 0 5px;font-size:15px}
+.lf-module-off p{margin:0;color:#50575e}
+
+/* Module list (settings) */
+.lf-module-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px;border-bottom:1px solid #dcdcde}
+.lf-module-row:last-child{border-bottom:none}
+.lf-module-row .info{flex:1}
+.lf-module-row .info strong{font-size:14px}
+.lf-module-row .info p{margin:3px 0 0;font-size:12.5px;color:#50575e}
+.lf-module-row .meta{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+.lf-module-row.locked{opacity:.6}
+
+/* WhatsApp preview */
+.lf-wa-bg{background:#e5ddd5;border-radius:6px;padding:14px;max-width:340px}
+.lf-wa-bub{background:#dcf8c6;border-radius:8px 8px 0 8px;padding:10px 13px;font-size:13px;color:#1d2327;box-shadow:0 1px 1px rgba(0,0,0,.1);max-width:280px;margin-left:auto}
+.lf-wa-key{font-family:Consolas,monospace;font-size:12px;font-weight:700;background:rgba(0,0,0,.07);padding:5px 9px;border-radius:4px;margin:7px 0;word-break:break-all}
+
+/* Email preview */
+.lf-ep{border:1px solid #c3c4c7;border-radius:6px;overflow:hidden;background:#fff}
+.lf-ep-hdr{background:#2271b1;color:#fff;padding:22px 26px}
+.lf-ep-hdr h2{margin:0;font-size:18px;font-weight:600;color:#fff}
+.lf-ep-body{padding:24px 26px;color:#1d2327}
+.lf-ep-key{background:#f0f6fc;border:1.5px dashed #2271b1;border-radius:4px;padding:14px;margin:14px 0}
+
+/* Inbox layout */
+.lf-inbox{display:grid;grid-template-columns:280px 1fr;border:1px solid #c3c4c7;border-radius:4px;background:#fff;min-height:500px;overflow:hidden}
+.lf-inbox-list{border-right:1px solid #dcdcde;background:#f6f7f7;overflow-y:auto;max-height:600px}
+.lf-inbox-item{padding:12px 14px;border-bottom:1px solid #dcdcde;cursor:pointer}
+.lf-inbox-item:hover{background:#f0f6fc}
+.lf-inbox-item.active{background:#fff;border-left:3px solid #2271b1}
+.lf-inbox-detail{padding:18px 22px;display:flex;flex-direction:column}
+.lf-msg{margin-bottom:12px;max-width:75%;padding:10px 14px;border-radius:8px;font-size:13px;line-height:1.5}
+.lf-msg.in{background:#f0f0f1;border:1px solid #dcdcde}
+.lf-msg.out{background:#2271b1;color:#fff;margin-left:auto}
+
+/* Bar chart */
+.lf-bars{display:flex;align-items:flex-end;gap:6px;height:140px;padding:8px 0}
+.lf-bars .col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px}
+.lf-bars .fill{width:100%;border-radius:3px 3px 0 0;background:#2271b1;min-width:14px}
+.lf-bars .v{font-size:10px;font-weight:600;color:#50575e}
+.lf-bars .l{font-size:11px;color:#646970}
+
+/* Frontend (My Account) license card */
+.lf-fe-license{background:linear-gradient(135deg,#f0f6fc,#e7f0fa);border:1px solid #2271b1;border-radius:6px;padding:14px 18px;margin-bottom:14px}
+.lf-fe-license-key{background:#fff;border:1px solid #c3c4c7;border-radius:3px;padding:8px 12px;font-family:Consolas,monospace;font-size:13px;font-weight:600;display:flex;justify-content:space-between;align-items:center;margin:8px 0}
